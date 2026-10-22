@@ -6,16 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Android Apps by Mehdi Azizi | SprintTime & DynamicCrop</title>
-  <meta name="description" content="Discover Android apps by Mehdi Azizi. SprintTime measures sprint times from video, while DynamicCrop provides dynamic video cropping, zooming, panning, and reframing.">
+
+  <meta name="description" content="Discover SprintTime, an app for measuring sprint times from video, and DynamicCrop, an Android app for dynamic video cropping, zooming, panning, and reframing.">
   <meta name="author" content="Mehdi Azizi">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://drmehdiazizi.github.io/">
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="Android Apps by Mehdi Azizi">
-  <meta property="og:description" content="Explore SprintTime for sprint video timing and DynamicCrop for dynamic video cropping and reframing.">
+  <meta property="og:description" content="Explore SprintTime for sprint timing and video analysis, and DynamicCrop for dynamic video cropping and reframing.">
   <meta property="og:url" content="https://drmehdiazizi.github.io/">
-  <meta name="theme-color" content="#101827">
+  <meta name="theme-color" content="#ffffff">
 
   <style>
     * {
@@ -25,8 +26,8 @@
     body {
       margin: 0;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      color: #e8edf5;
-      background: #101827;
+      color: #202938;
+      background: #ffffff;
       line-height: 1.7;
     }
 
@@ -46,22 +47,23 @@
 
     header h1 {
       margin: 0 0 14px;
-      font-size: clamp(2rem, 5vw, 3.3rem);
+      color: #111827;
+      font-size: clamp(2rem, 5vw, 3.2rem);
       line-height: 1.2;
       letter-spacing: -1.5px;
     }
 
     header p {
-      max-width: 680px;
+      max-width: 700px;
       margin: 0 auto;
-      color: #aebbd0;
+      color: #5b6575;
       font-size: 1.08rem;
     }
 
     .apps {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 26px;
+      gap: 28px;
       padding: 20px 0 70px;
     }
 
@@ -70,16 +72,17 @@
       flex-direction: column;
       align-items: flex-start;
       padding: 30px;
-      background: #192437;
-      border: 1px solid #2c3b52;
-      border-radius: 20px;
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 18px;
+      box-shadow: 0 5px 24px rgba(15, 23, 42, 0.045);
     }
 
     .app-header {
       display: flex;
       align-items: center;
       gap: 18px;
-      margin-bottom: 18px;
+      margin-bottom: 20px;
     }
 
     .app-icon {
@@ -87,12 +90,13 @@
       height: 88px;
       object-fit: contain;
       border-radius: 18px;
-      background: #fff;
+      background: #f3f4f6;
       flex-shrink: 0;
     }
 
     .app-card h2 {
       margin: 0;
+      color: #111827;
       font-size: 1.65rem;
       line-height: 1.3;
     }
@@ -100,19 +104,20 @@
     .category {
       display: inline-block;
       margin-top: 7px;
-      color: #9db7ff;
+      color: #596579;
       font-size: 0.88rem;
+      line-height: 1.5;
     }
 
     .app-card p {
-      color: #bdc8d8;
+      color: #4b5563;
       margin: 0 0 18px;
     }
 
     .app-card ul {
       padding-left: 22px;
-      margin: 0 0 25px;
-      color: #bdc8d8;
+      margin: 0 0 26px;
+      color: #4b5563;
     }
 
     .app-card li {
@@ -129,48 +134,62 @@
 
     .button {
       display: inline-block;
-      padding: 10px 17px;
+      padding: 10px 16px;
       border-radius: 9px;
+      text-align: center;
       text-decoration: none;
+      font-size: 0.94rem;
       font-weight: 650;
-      transition: opacity 0.2s;
-    }
-
-    .button:hover {
-      opacity: 0.82;
+      transition: background 0.2s, border-color 0.2s;
     }
 
     .primary {
-      background: #a8f0bd;
-      color: #10251a;
+      background: #166534;
+      border: 1px solid #166534;
+      color: #ffffff;
+    }
+
+    .primary:hover {
+      background: #14532d;
     }
 
     .secondary {
-      border: 1px solid #53647c;
-      color: #e8edf5;
+      background: #ffffff;
+      border: 1px solid #d1d5db;
+      color: #1f2937;
+    }
+
+    .secondary:hover {
+      background: #f9fafb;
+      border-color: #9ca3af;
     }
 
     .about {
       max-width: 760px;
       margin: 0 auto 70px;
-      padding: 30px;
-      border-top: 1px solid #2c3b52;
+      padding: 35px 20px;
+      border-top: 1px solid #e5e7eb;
       text-align: center;
     }
 
     .about h2 {
       margin-top: 0;
+      color: #111827;
     }
 
     .about p {
-      color: #bdc8d8;
+      color: #5b6575;
+    }
+
+    .about a {
+      color: #166534;
     }
 
     footer {
       padding: 24px 0;
-      border-top: 1px solid #2c3b52;
+      border-top: 1px solid #e5e7eb;
       text-align: center;
-      color: #94a3b8;
+      color: #6b7280;
       font-size: 0.9rem;
     }
 
@@ -184,16 +203,16 @@
       }
 
       .app-card {
-        padding: 23px;
+        padding: 24px;
       }
 
       .app-icon {
-        width: 72px;
-        height: 72px;
+        width: 76px;
+        height: 76px;
       }
 
       .app-card h2 {
-        font-size: 1.4rem;
+        font-size: 1.45rem;
       }
     }
   </style>
@@ -216,8 +235,8 @@
     <h1>Android Apps by Mehdi Azizi</h1>
     <p>
       Discover Android apps for sprint performance measurement and video
-      editing. Explore their features, download them from Google Play,
-      or visit their GitHub repositories.
+      editing. Explore app features, visit their websites, and download
+      them from Google Play.
     </p>
   </header>
 
@@ -259,14 +278,14 @@
             href="https://play.google.com/store/apps/details?id=com.sprinttime.app"
             target="_blank"
             rel="noopener noreferrer"
-          >Get on Google Play ↗</a>
+          >Download on Google Play ↗</a>
 
           <a
             class="button secondary"
-            href="https://github.com/drmehdiazizi/sprinttime"
+            href="https://drmehdiazizi.github.io/sprinttime/"
             target="_blank"
             rel="noopener noreferrer"
-          >GitHub Repository ↗</a>
+          >Visit Website ↗</a>
         </div>
       </article>
 
@@ -305,14 +324,14 @@
             href="https://play.google.com/store/apps/details?id=com.miyanali.dynamiccrop"
             target="_blank"
             rel="noopener noreferrer"
-          >Get on Google Play ↗</a>
+          >Download on Google Play ↗</a>
 
           <a
             class="button secondary"
-            href="https://github.com/drmehdiazizi/DynamicCrop"
+            href="https://drmehdiazizi.github.io/DynamicCrop/"
             target="_blank"
             rel="noopener noreferrer"
-          >GitHub Repository ↗</a>
+          >Visit Website ↗</a>
         </div>
       </article>
 
@@ -326,7 +345,7 @@
         creators, and everyday users.
       </p>
       <p>
-        Explore my projects and updates on
+        Explore my projects and source code on
         <a
           href="https://github.com/drmehdiazizi"
           target="_blank"
